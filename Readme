@@ -1,0 +1,69 @@
+1.Unzip the files
+2.Install node modules by npm install
+3.Run the MongoDb connection
+4.Then run the Server by node index.js command
+5.Check for api CRUD
+6.Check for erros in Postman
+
+API made:-
+
+
+POST Register --> http://localhost:8080/api/register
+
+{
+      "name":"Rahul",
+      "email":"rahul@gmail.com",
+       "password":"password"
+    }
+POST Login  -->http://localhost:8080/api/login
+
+{
+        "email":"rahul@gmail.com",
+        "password":"password"
+    }
+    
+ POST Add Todo --> http://localhost:8080/api/todo
+
+{
+        "title": "Reading",
+        "shortDescription": "must do fhfg hfgh thfgh hfgh tutut tutjt tut ",
+        "longDescription": "rytrtrt ytfy rtutut tutu tutu tutu trutu tuutu tut tutu tutu",
+        "author": "Rahul"
+        
+GET Todos --> http://localhost:8080/api/todos
+
+{
+        "title": "Rahul kjMust do",
+        "shortDescription": "must do fhfg hfgh thfgh hfgh tutut tutjt tut ",
+        "longDescription": "rytrtrt ytfy rtutut tutu tutu tutu trutu tuutu tut tutu tutu",
+        "author": "rtert"
+        
+GET Todo --> http://localhost:8080/api/todo/:id
+
+{
+       "title": "Read Book Titin",
+        "shortDescription": "A book of adventure thrill & readable purposes ",
+        "longDescription": "A book of adventure thrill & readable purposes with Titin & snowy dog ",
+        "author": "Warren"
+        }
+        
+  PUT Todo -->    http://localhost:8080/api/todo/:id
+
+
+{
+       "title": "Read Book Titin",
+        "shortDescription": "A book of adventure thrill & readable purposes ",
+        "longDescription": "A book of adventure thrill & readable purposes with Titin & snowy dog ",
+        "author": "Warren"
+        }
+        
+  DELETE Todo  --> http://localhost:8080/api/todo/:id
+
+
+{
+        "title": "Read Book Titin",
+        "shortDescription": "A book of adventure thrill & readable purposes ",
+        "longDescription": "A book of adventure thrill & readable purposes with Titin & snowy dog ",
+        "author": "Warren"
+       
+        }
